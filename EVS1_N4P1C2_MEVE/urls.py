@@ -18,10 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from app1 import views as v1
 from app1.views import vistaDos
+from app2.views import hola
+from app2.views import pregunta
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('vista1/', v1.vistaUno),
     path('vista2/', v1.vistaDos),
-
+    path('admin/', admin.site.urls),
+    path('saludo/',hola), 
+    path('pregunta/',pregunta),
 ]
